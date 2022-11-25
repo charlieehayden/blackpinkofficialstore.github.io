@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="stylebornpink.css">
+    <title>BORNPINK | BLACKPINK</title>
+</head>
+<body>
+
+<!-- Search bar -->
+<div class="search_bar">
+    <form>
+        <input type="search" placeholder="Search...">
+    </form>
+    <img src="mainpage/exit_search.png" alt="" class="close_search" width="30px" height="30px">
+</div>
+
+<!-- Header -->
+<div class="icon_bar">
+    <select class="icon_left">
+        <option value="USD" selected="selected">USD</option>
+        <option value="SGD">SGD</option>
+        <option value="MYR">MYR</option>
+        <option value="AUD">AUD</option>
+        <option value="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+    </select>
+
+    <a class="icon_left">
+        <img id="search" src="mainpage/searchicon.png" alt="" width="30px">
+    </a>
+    <a class="icon_right" href="accountpage.html"> 
+        <img id="account" src="mainpage/usericon.png">
+    </a>
+    <a class="icon_right">
+        <img id="wishlist" src="mainpage/wishlisticon.png" width="30px"> 
+    </a>
+    <a class="icon_right"> 
+        <img id="cart" src="mainpage/carticon.png" width="30px">
+    </a>
+</div>
+
+<!-- Shopping Cart -->
+<div class="cart_page">
+    <img src="mainpage/exit_cart.png" alt="" class="close_cart" width="30px" height="30px">
+    <h2 class="cart_title">SHOPPING CART</h2>
+    <hr>
+    <table style="width:100%">
+        <tr>
+            <td class="prod" style="width:50%">'BORN PINK' HOODIE<img src="clothing/hoodies&sweatshirt/hoodie1.png" alt="" width="100%"></td>
+            <td class="qty" style="width:20%"><input type="number" value="1" min="1" max="50"></td>
+            <td class="price" style="width:20%">$55</td>
+        </tr>
+        <tr>
+            <td class="prod" style="width:50%">'HYLT' CROP TOP<img src="clothing/tops&tees/tee5.png" alt="" width="100%"></td>
+            <td class="qty" style="width:20%"><input type="number" value="1" min="1" max="50"></td>
+            <td class="price" style="width:20%">$20</td>
+        </tr>
+    </table>
+    <a href="paymentpage.html"> 
+        <button>CHECKOUT</button>
+    </a>
+</div>
+
+<!-- Wishlist -->
+<div class="wishlist_page">
+    <img src="mainpage/exit_cart.png" alt="" class="close_wishlist" width="30px" height="30px">
+    <h2 class="wishlist_title">WISHLIST</h2>
+    <hr>
+    <div class="wishlist_content">
+        <h4>Your wishlist is currently empty!</h4>
+        <a href="clothingpage.html"> 
+        <button>SHOP NOW</button>
+        </a>
+    </div>
+</div>
+
+<!-- Navigation bar -->
+<section class="menu">
+    <div class="container_logo">
+        <a href="index.html">
+        <img class="logo" src="mainpage/blackpinklogo3.png" width="560px">
+        </a>
+        <h5 class="subtitle">OFFICIAL STORE</h5>
+    </div>
+    <div class="navbar">
+        <div class="dropdown">
+            <button id="clothingButton" class="dropbtn">CLOTHING
+            </button>
+            <div class="dropdown-content">
+                <a href="clothingtops_tees.html">Tops & Tees</a>
+                <a href="clothingswe_hoo.html">Sweaters & Hoodies</a>
+                <a href="clothingbottoms.html">Bottoms</a>
+            </div>
+          </div>
+        <div id="accessories_btn">
+            <a href="accessoriespage.html">ACCESSORIES</a>
+        </div>
+        <div class="dropdown">
+            <button id="albumButton" class="dropbtn">ALBUMS
+            </button>
+            <div class="dropdown-content">
+              <a href="thealbumpage.html">The Album</a>
+              <a href="squareuppage.html">Square Up</a>
+              <a href="bornpinkpage.html">Born Pink</a>
+            </div>
+          </div>
+        <div id="collectibles_btn">
+            <a href="collectiblespage.html">COLLECTIBLES</a>
+        </div>
+    </div>
+</section>
+
+<!-- Product section -->
+<section>
+    <div class="album">
+        <div class="album_img">
+            <img id="cover" src="albums/bornpinkcover.jpg" alt=""  width="300px">
+            <img id="cd" src="albums/bornpinkcd.png" alt="" width="300px" height="300px">
+        </div>
+        <div class="description">
+            <h3>BORNPINK</h3>
+            <h4 class="price">$70</h4>
+            <h4>Package includes:</h4>
+            <ul>
+                <li>BORNPINK CD</li>
+                <li>Photobook (80 pages)</li>
+                <li>Large Photocard</li>
+                <li>Large Postcard</li>
+                <li>Instant Films (2 films)</li>
+                <li>Selfie Photocards (2 cards)</li>
+                <li>Stickers</li>
+                <li>Large Poster</li>
+                <li>Exclusive Signed Message (Random)</li>
+            </ul>
+            <div class="audio_player">
+                <audio controls>
+                    <source src="albums/audio/SD_bornpink.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="icon">
+                <img onclick="alert('This item is added to your wishlist!')" src="mainpage/wishlisticon.png" alt="wishlist" width="40px">
+                <img onclick="alert('This item is added to your cart!')" class="addToCart" src="mainpage/carticon.png" alt="shopping cart" width="40px">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="content">
+        <div class="song_table">
+            <h3>Song list:</h3>
+            <table style="width:100%">
+                <tr>
+                    <th>No.</th>
+                    <th style="width: 70%">Name</th>
+                    <th style="width: 50%">Artist</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pink Venom</td>
+                    <td>BLACKPINK</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shut Down</td>
+                    <td>BLACKPINK</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Typa Girl</td>
+                    <td>BLACKPINK</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Yeah Yeah Yeah</td>
+                    <td>BLACKPINK</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Hard To Love</td>
+                    <td>BLACKPINK</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Tally</td>
+                    <td>BLACKPINK</td>
+                </tr>
+            </table>
+        </div>
+        <div class="img_size">
+            <img id="size" src="albums/bornpinksize.png" alt="" width="500px" height="500px">
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="social_icon">
+        <a href="https://www.facebook.com/BLACKPINKOFFICIAL/" target="blank">
+            <img src="footer/icons8-facebook.svg">
+        </a>
+        <a href="https://www.instagram.com/blackpinkofficial/?hl=en" target="blank">
+            <img src="footer/icons8-instagram.svg">
+        </a>
+        <a href="https://open.spotify.com/artist/41MozSoPIsD1dJM0CLPjZF" target="blank">
+            <img src="footer/icons8-spotify.svg">
+        </a>
+        <a href="https://www.tiktok.com/@bp_tiktok?lang=en" target="blank">
+            <img src="footer/icons8-tiktok.svg">
+        </a>
+        <a href="https://twitter.com/BLACKPINK" target="blank">
+            <img src="footer/icons8-twitter.svg">
+        </a>
+    </div>
+    <div class="payment_icon">
+        <img src="footer/american-express.svg" width="40px">
+        <img src="footer/apple-pay.svg" width="40px">
+        <img src="footer/mastercard.svg" width="40px">
+        <img src="footer/294654_visa_icon.svg" width="40px">
+        <img src="footer/paypal.svg" width="40px">
+    </div>
+    <div class="legal">
+        <a href="contactus.html">Contact Us</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="shipping.html">Shipping</a>
+        <a href="T&C.html">Terms & Conditions</a>
+    </div>
+    <small>© 2022 BLACKPINK - Official Store. All Rights Reserved.</small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
